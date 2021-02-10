@@ -1,0 +1,1 @@
+$(eval const results = `$(urlfetch json https://pastebin.com/raw/kq672UpF)`.split(';'); const text = results[Math.floor(Math.random() * (results.length-1))]; text.replace(/\$user/g, `$(user)`).replace(/\$touser/g, `$(touser)`);)
